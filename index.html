@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Brazilla</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<main>
+		<section class="banner">
+			<h2>Оружи для знищеня противника</h2>
+			<p></p>
+			<a href="#" class="cta">Дізнатись більше</a>
+		</section>
+		<section class="menu">
+			<h2>Наш асортимент</h2>
+			<ul>
+				<li class="product-item">
+
+			<img src="m24.jpg" alt="Снайперська гвинтівка M24"width="250" height="200">
+					<h3>Снайперська гвинтівка M24</h3>
+					<p>Снайперська гвинтівка M24 — американська снайперська гвинтівка, розроблена на базі Remington 700.</p>
+					<a href="#">Купити</a>
+				</li>
+				<li class="product-item">
+
+			<img src="M16.jpg" alt="M16"width="250" height="200">
+					<h3>M16</h3>
+					<p>M16— узагальнювальна назва сімейства автоматичних гвинтівок, які походять від ArmaLite AR-15 та розроблені компанією Colt в середині XX століття.</p>
+					<a href="#">Купити</a>
+				</li>
+				<li class="product-item">
+
+			<img src="Glock 18.jpg" alt="Glock 18"width="250" height="200">
+					<h3>Glock 18</h3>
+					<p>Glock 18 — австрійський автоматичний пістолет виробництва Glock GmbH. Призначений для озброєння спецпідрозділів армії та поліції.</p>
+					<a href="#">Купити</a>
+				</li>
+				<li class="product-item">
+					<img src="M&P15.jpg" alt="M&P15 "width="250" height="200">
+					<h3>M&P15</h3>
+					<p>M&P15 — штурмова гвинтівка створена на базі гвинтівки AR-15 компанією Smith & Wesson. Гвинтівка була представлена в 2006 році, зброя була розроблена для поліції та комерційних ринків.</p>
+					<a href="#">Купити</a>
+				</li>
+				<li class="product-item">
+					<img src="TDI Kriss Vector Super V.jpg" alt="TDI Kriss Vector Super V"width="250" height="200">
+					<h3>TDI Kriss Vector Super V</h3>
+					<p>TDI Kriss Vector Super V  — пістолет-кулемет, розроблений компанією «Transformational Defense Industries». Використовує систему напіввільного затвора, напрямну рухому віддачею затворну групу вниз під великим кутом. Ця система називається Kriss Super V.</p>
+					<a href="#">Купити</a>
+				</li>
+				<li class="product-item">
+					<img src="M249.jpg" alt="M249"width="250" height="200">
+					<h3>M249</h3>
+					<p>M249 — «автоматическое оружие отделения», в народе «поросёнок» — вариант ручного пулемёта FN Minimi для армии США калибра 5,56×45 мм американского производства (производится FN Manufacturing, Inc. — местным филиалом бельгийской компании FN Herstal), серийное производство началось в 1980-х годах.</p>
+					<a href="#">Купити</a>
+				</li>
+			</ul>
+		</section>
+	</main>
+	<style>
+		.video-container {
+			width: 100%;
+			height: 0;
+			padding-bottom: 56.25%;
+			position: relative;
+		}
+
+		.video-container iframe {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+		}
+	</style>
+
+	<div class="video-container">
+		<iframe src="https://www.youtube.com/embed/u3I-j8rbyHM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+	</div>
+
+
+	<footer>
+		<p>gmail: Kovalcukbogdan7@gmail.com</p>
+		<p>Телефон: +380638302850</p>
+		<p>Адреса: вул. Інститутська 10, м. Хмельницький, Україна</p>
+		<p>&copy; 2023 ArmaLite. Усі права захищені.</p>
+		<p><a href="https://www.instagram.com" target="_blank"><img src="instagram-icon.png" alt="Instagram" width="30" height="30"></a>  <a href="https://www.facebook.com" target="_blank"><img src="facebook-icon.png" alt="Facebook" width="30" height="30"></a></p>
+	</footer>
+</body>
+</html>
+<script>
+	window.addEventListener('DOMContentLoaded', function() {
+		var videoPlayer = document.getElementById('video-player');
+
+		function resizeVideo() {
+			var parentWidth = videoPlayer.parentElement.offsetWidth;
+			var newHeight = (parentWidth / 16) * 9;
+			videoPlayer.style.width = parentWidth + 'px';
+			videoPlayer.style.height = newHeight + 'px';
+		}
+
+		window.addEventListener('resize', resizeVideo);
+		resizeVideo();
+	});
+</script>
